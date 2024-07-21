@@ -4,11 +4,7 @@ Esse repositório armazena o código do site da nossa turma, inicialmente pensad
 
 ## Tecnologias
 
-Pelo site ser simples e pequeno, usaremos apenas as bases:
-
-- HTML
-- CSS
-- JavaScript
+Pelo site ser simples e pequeno, usaremos apenas HTML, CSS e JavaScript.
 
 ## Contribuindo
 
