@@ -12,9 +12,9 @@ Pelo site ser simples e pequeno, usaremos apenas as bases:
 
 ## Contribuindo
 
-Você pode contribuir com esse site relatando problemas e sugerindo melhorias por meio das [Issues](https://github.com/dcdm3g/site-da-turma/issues) e também criando ou participando de conversas abertas através das [Discussões](https://github.com/dcdm3g/site-da-turma/discussions). Mas, se você quiser colocar a mão na massa contribuindo com código, você pode contribuir através de [Pull Requests](https://github.com/dcdm3g/site-da-turma/pulls).
+Você pode contribuir com esse site relatando problemas e sugerindo melhorias por meio das [Issues](https://github.com/dcdm3g/site-da-turma/issues) e também criando ou participando de conversas abertas através das [Discussões](https://github.com/dcdm3g/site-da-turma/discussions).
 
-Se você nunca programou e caiu aqui de paraquedas, nós altamente recomendamos você visitar a [Wiki](https://github.com/dcdm3g/site-da-turma/wiki) desse repositório. Nela deixaremos guias detalhados para você configurar seu ambiente de desenvolvimento e contribuir via Pull Requests.
+Mas, se você quiser colocar a mão na massa, você pode contribuir através de [Pull Requests](https://github.com/dcdm3g/site-da-turma/pulls). Se você se considera iniciante, não se preocupe! Escreveremos guias em breve para que a maioria das pessoas possa contribuir.
 
 ## Milestones
 
