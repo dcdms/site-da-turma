@@ -18,7 +18,7 @@ Para contribuir via Pull Requests, você precisa ter uma conta no GitHub, um edi
 - [Instale e Configure o Git](https://docs.github.com/pt/get-started/getting-started-with-git/set-up-git)
 - [Instale o VS Code](https://code.visualstudio.com/download)
 
-Se você tiver tudo configurado, pode começar a contribuir criando uma nova Pull Request. Se você não sabe como fazer isso, leia [esse guia](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
+Se você tiver tudo configurado, pode começar a usar as Pull Requests. Leia [sobre Pull Requests](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) se você precisa aprender mais sobre elas.
 
 ## Contribuidores
 
