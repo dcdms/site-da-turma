@@ -20,10 +20,6 @@ Para contribuir via Pull Requests, você precisa ter uma conta no GitHub, um edi
 
 Se você tiver tudo configurado, pode começar a contribuir criando uma nova Pull Request. Se você não sabe como fazer isso, leia [esse guia](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
-## Milestones
-
-Milestones são grupos de Issues e Pull Requests e as usaremos como marcos do desenvolvimento do site. Criaremos a primeira delas em breve para colocar uma primeira versão desse site no ar.
-
 ## Contribuidores
 
 <a href="https://github.com/dcdm3g/site-da-turma/graphs/contributors">
