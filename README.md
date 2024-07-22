@@ -12,7 +12,7 @@ Você pode contribuir com esse site relatando problemas e sugerindo melhorias po
 
 ### Pull Requests
 
-Para contribuir via Pull Requests, você precisa ter uma conta no GitHub, um editor de código, como o VS Code, e o Git ligado a sua conta no GitHub. Se você precisar configurar um ambiente de desenvolvimento, leia esses guias das documentações oficiais dessas ferramentas:
+Para contribuir via Pull Requests, você precisa ter uma conta no GitHub, um editor de código, como o VS Code, e o Git conectado à sua conta no GitHub. Se você precisar configurar um ambiente de desenvolvimento, leia esses guias das documentações oficiais dessas ferramentas:
 
 - [Crie uma Conta no GitHub](https://docs.github.com/pt/get-started/start-your-journey/creating-an-account-on-github)
 - [Instale e Configure o Git](https://docs.github.com/pt/get-started/getting-started-with-git/set-up-git)
