@@ -1,0 +1,47 @@
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(240, 10%, 3.9%);
+  --muted: hsl(240, 4.8%, 95.9%);
+  --muted-foreground: hsl(240,  3.8%, 46.1%);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--foreground);
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.student-list {
+  display: flex;
+}
+
+.student-list {
+  display: flex;
+  gap: 0.5rem;
+
+  animation: scroll 10s linear infinite;
+}
+
+.student {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--muted);
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  /* pode ser removido depois */
+  color: var(--muted-foreground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
