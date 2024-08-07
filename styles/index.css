@@ -1,6 +1,43 @@
-h1 {
-  font-size: 1.875rem; /* 30px */
-  line-height: 2.25rem; /* 36px */
-  font-weight: 700;
-  text-decoration: underline;
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(240, 10%, 3.9%);
+  --muted: hsl(240, 4.8%, 95.9%);
+  --muted-foreground: hsl(240, 3.8%, 46.1%);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+.header {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.student-list {
+  display: flex;
+  gap: 0.5rem;
+  animation: scroll 20s linear infinite;
+}
+
+.student {
+  background-color: var(--muted);
+  color: var(--muted-foreground);
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-50% - 0.25rem));
+  }
 }
