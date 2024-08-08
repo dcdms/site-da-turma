@@ -2,46 +2,66 @@
   --background: hsl(0, 0%, 100%);
   --foreground: hsl(240, 10%, 3.9%);
   --muted: hsl(240, 4.8%, 95.9%);
-  --muted-foreground: hsl(240,  3.8%, 46.1%);
+  --muted-foreground: hsl(240, 3.8%, 46.1%);
 }
 
 body {
-  min-height: 100vh;
   background-color: var(--background);
   color: var(--foreground);
-  padding: 1.5rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
 }
 
-.student-list {
+.header {
+  height: 4rem;
+  width: 100%;
   display: flex;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 .student-list {
   display: flex;
   gap: 0.5rem;
-
-  animation: scroll 10s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 .student {
-  width: 4rem;
-  height: 4rem;
   background-color: var(--muted);
-  border-radius: 50%;
-  flex-shrink: 0;
-
-  /* pode ser removido depois */
   color: var(--muted-foreground);
+  height: 3rem;
+  width: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 9999px;
+  flex-shrink: 0;
 }
 
 @keyframes scroll {
   to {
-    transform: translate(calc(-50% - 0.5rem));
+    transform: translateX(calc(-50% - 0.25rem));
   }
 }
+
+@media (prefers-reduced-motion){
+  .student-list {
+    animation: none;
+  }
+}
+  
+  span.oi {
+    animation-name: saudacao;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  
+  @keyframes saudacao {
+      0% { transform: rotate(  0.0deg); }
+     10% { transform: rotate(-10.0deg); }
+     20% { transform: rotate( 12.0deg); }
+     30% { transform: rotate(-10.0deg); }
+     40% { transform: rotate(  9.0deg); }
+     50% { transform: rotate(  0.0deg); }
+    100% { transform: rotate(  0.0deg); }
+  }
