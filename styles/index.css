@@ -36,10 +36,12 @@ body {
   flex-shrink: 0;
 }
 
-@keyframes scroll {
-  to {
-    transform: translateX(calc(-50% - 0.25rem));
-  }
+.waving-hand {
+  animation-name: waving;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
 }
 
 @media (prefers-reduced-motion) {
@@ -48,20 +50,38 @@ body {
   }
 }
 
-span.oi {
-  animation-name: saudacao;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-50% - 0.25rem));
+  }
 }
 
-@keyframes saudacao {
-    0% { transform: rotate(  0.0deg); }
-   10% { transform: rotate(-10.0deg); }
-   20% { transform: rotate( 12.0deg); }
-   30% { transform: rotate(-10.0deg); }
-   40% { transform: rotate(  9.0deg); }
-   50% { transform: rotate(  0.0deg); }
-  100% { transform: rotate(  0.0deg); }
+@keyframes waving {
+  0% { 
+    transform: rotate(0deg); 
+  }
+
+  10% { 
+    transform: rotate(-10deg);
+  }
+
+  20% { 
+    transform: rotate(12deg); 
+  }
+    
+  30% { 
+    transform: rotate(-10deg); 
+  }
+
+  40% {
+    transform: rotate(9deg);
+  }
+
+  50% { 
+    transform: rotate(0deg); 
+  }
+
+  100% {
+    transform: rotate(0deg); 
+  }
 }
