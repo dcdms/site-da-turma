@@ -37,9 +37,7 @@ body {
 }
 
 .waving-hand {
-  animation-name: waving;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
+  animation: waving 2.5s linear infinite;
   transform-origin: 70% 70%;
   display: inline-block;
 }
