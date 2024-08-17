@@ -3,6 +3,8 @@
   --foreground: 240, 10%, 3.9%;
   --muted: 240, 4.8%, 95.9%;
   --muted-foreground: 240, 3.8%, 46.1%;
+  --card: 0, 0%, 100%;
+  --card-foreground: 240, 10%, 3.9%;
 }
 
 body {
@@ -38,6 +40,9 @@ body {
 
 .content {
   padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .greeting {
@@ -66,16 +71,95 @@ body {
   display: inline-block;
 }
 
+.podcasts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.podcasts-title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.podcast-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.podcast-card {
+  background-color: hsl(var(--card));
+  color: hsl(var(--card-foreground));
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.podcast-card-thumbnail {
+  background-color: hsl(var(--muted));
+  aspect-ratio: 296 / 160;
+  border-radius: 0.5rem;
+}
+
+.podcast-card-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.podcast-card-authors {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.podcast-author {
+  background-color: hsl(var(--muted));
+  color: hsl(var(--muted-foreground));
+  height: 2rem;
+  width: 2rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .podcast-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 768px) {
   .greeting-title {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .podcasts-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .podcast-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 640px) {
   .content {
     padding: 0.5rem 1rem;
+  }
+
+  .podcast-list {
+    grid-template-columns: none;
   }
 }
 
