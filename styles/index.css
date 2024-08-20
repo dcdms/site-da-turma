@@ -132,7 +132,7 @@ body {
 }
 
 .podcast-author {
-  color: var(--muted-foreground);
+  color: hsl(var(--muted-foreground));
   font-size: 0.75rem;
   line-height: 1rem;
 }
