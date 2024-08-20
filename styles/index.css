@@ -110,13 +110,23 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.podcast-thumbnail-container {
+  border-radius: 0.375rem;
+  overflow: hidden;
 }
 
 .podcast-thumbnail {
-  background-color: hsl(var(--muted));
-  aspect-ratio: 1 / 1;
-  border-radius: 0.25rem;
-  width: 150px;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .podcast-info {
