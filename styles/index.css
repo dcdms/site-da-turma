@@ -103,7 +103,16 @@ body {
   display: flex;
   gap: 1rem;
   padding-bottom: 1rem;
-  overflow-x: hidden;
+  overflow-x: scroll;
+}
+
+.podcast-list::-webkit-scrollbar {
+  height: 10px;
+}
+
+.podcast-list::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--border));
+  border-radius: 9999px;
 }
 
 .podcast {
