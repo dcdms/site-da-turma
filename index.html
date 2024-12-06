@@ -104,7 +104,7 @@
 
       <ul class="podcast-list">
         <li class="podcast">
-          <div class="podcast-thumbnail-container">
+          <button id="first-player" class="podcast-player" data-audio="first">
             <img 
               class="podcast-thumbnail" 
               src="https://picsum.photos/150?random=1" 
@@ -114,16 +114,16 @@
               decoding="async"
               loading="lazy"
             >
-          </div>
+          </button>
 
           <div class="podcast-info">
-            <h3 class="podcast-title">Acessibilidade Real</h3>
-            <p class="podcast-author">Elias e Amigos</p>
+            <h3 class="podcast-title">Rotina Escolar</h3>
+            <p class="podcast-author">Kailani e Cia</p>
           </div>
         </li>
 
         <li class="podcast">
-          <div class="podcast-thumbnail-container">
+          <button id="second-player" class="podcast-player" data-audio="second">
             <img 
               class="podcast-thumbnail" 
               src="https://picsum.photos/150?random=2" 
@@ -133,16 +133,16 @@
               decoding="async"
               loading="lazy"
             >
-          </div>
+          </button>
 
           <div class="podcast-info">
-            <h3 class="podcast-title">Entrevista Reveladora</h3>
-            <p class="podcast-author">Babalu</p>
+            <h3 class="podcast-title">Esportes</h3>
+            <p class="podcast-author">Victor e Cia</p>
           </div>
         </li>
 
         <li class="podcast">
-          <div class="podcast-thumbnail-container">
+          <button id="third-player" class="podcast-player" data-audio="third">
             <img 
               class="podcast-thumbnail" 
               src="https://picsum.photos/150?random=3" 
@@ -152,16 +152,16 @@
               decoding="async"
               loading="lazy"
             >
-          </div>
+          </button>
 
           <div class="podcast-info">
-            <h3 class="podcast-title">Gentileza</h3>
-            <p class="podcast-author">Luz da Manhã</p>
+            <h3 class="podcast-title">Limites Vencidos</h3>
+            <p class="podcast-author">Samuel e Cia</p>
           </div>
         </li>
 
         <li class="podcast">
-          <div class="podcast-thumbnail-container">
+          <button id="forth-player" class="podcast-player" data-audio="forth">
             <img 
               class="podcast-thumbnail" 
               src="https://picsum.photos/150?random=4" 
@@ -171,53 +171,24 @@
               decoding="async"
               loading="lazy"
             >
-          </div>
+          </button>
 
           <div class="podcast-info">
-            <h3 class="podcast-title">Dificuldades</h3>
-            <p class="podcast-author">Jornalistas</p>
+            <h3 class="podcast-title">Amarelo no Verde</h3>
+            <p class="podcast-author">Clara Prazeres e Cia</p>
           </div>
         </li>
 
-        <li class="podcast">
-          <div class="podcast-thumbnail-container">
-            <img 
-              class="podcast-thumbnail" 
-              src="https://picsum.photos/150?random=5" 
-              alt=""
-              width="150"
-              height="150"
-              decoding="async"
-              loading="lazy"
-            >
-          </div>
-
-          <div class="podcast-info">
-            <h3 class="podcast-title">Indo Além</h3>
-            <p class="podcast-author">Arroz</p>
-          </div>
-        </li>
-
-        <li class="podcast">
-          <div class="podcast-thumbnail-container">
-            <img 
-              class="podcast-thumbnail" 
-              src="https://picsum.photos/150?random=6" 
-              alt=""
-              width="150"
-              height="150"
-              decoding="async"
-              loading="lazy"
-            >
-          </div>
-          
-          <div class="podcast-info">
-            <h3 class="podcast-title">Conclusão</h3>
-            <p class="podcast-author">Winx</p>
-          </div>
-        </li>
+        
       </ul>
     </section>
   </main>
+
+  <audio id="first" src="podcasts/first.mp3"></audio>
+  <audio id="second" src="podcasts/second.mp3"></audio>
+  <audio id="third" src="podcasts/third.mp3"></audio>
+  <audio id="forth" src="podcasts/forth.mp3"></audio>
+
+  <script src="scripts/index.js"></script>
 </body>
 </html>
