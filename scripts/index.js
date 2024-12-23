@@ -6,7 +6,7 @@ for (const player of players) {
     
     for (const podcast of podcasts) {
       podcast.pause()
-      podcast.duration = 0
+      podcast.currentTime = 0
     }
   
     const id = event.currentTarget.dataset.audio
