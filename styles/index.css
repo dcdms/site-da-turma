@@ -26,13 +26,9 @@ body {
 }
 
 .student {
-  background-color: hsl(var(--muted));
-  color: hsl(var(--muted-foreground));
   height: 4rem;
   width: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
   border-radius: 9999px;
   flex-shrink: 0;
 }
